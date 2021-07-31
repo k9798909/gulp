@@ -5,22 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo"></div>
+      <ul class="nav d-flex justify-content-between">
+        <li><a class="f-20" href="">系列鏡框</a></li>
+        <li><a class="f-20" href="">系列鏡框</a></li>
+        <li><a class="f-20" href="">部落格</a></li>
+        <li><a class="f-20" href="">常見問題</a></li>
+      </ul>
+    </div>
+  </div>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    <div class="footer">
+      <div class="container d-flex flex-column">
+        <div class="phoneWidth">
+          <div class="linkArea d-flex justify-content-between">
+            <ul class="linkUl d-flex justify-content-between">
+              <li><a class="f-16" href="">首頁</a></li>
+              <li><a class="f-16" href="">系列鏡框</a></li>
+              <li><a class="f-16" href="">門市據點</a></li>
+              <li><a class="f-16" href="">部落格</a></li>
+              <li><a class="f-16" href="">常見問題</a></li>
+            </ul>
+            <div class="iconArea d-flex justify-content-between">
+              <img src="/assets/images/work03/icon-fb.svg" alt="">
+              <img src="/assets/images/work03/icon-ig.svg" alt="">
+              <img src="/assets/images/work03/icon-line.svg" alt="">
+            </div>
+          </div>
+          <div class="contact f-36">
+            <div class="phone d-flex">
+              <img class="phoneImg" src="/assets/images/work03/icon-phone.svg" alt="">
+              <p class="number">0800-000-000</p>
+            </div>
+            <div class="mail d-flex">
+              <img class="mailImg" src="/assets/images/work03/icon-mail.svg" alt="">
+              <p class="address">glasses@business.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="provision f-14 d-flex justify-content-between">
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <div class="d-flex">
+            <p>隱私權政策</p>
+            <p>服務條款</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

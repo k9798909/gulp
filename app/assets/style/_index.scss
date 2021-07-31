@@ -1,0 +1,525 @@
+@include pad {
+	.f-34 {
+		font-size: $font-size-base * 1.25;
+	}
+
+	.f-64 {
+		font-size: $font-size-base * 3;
+	}
+
+	h2 {
+		font-size: $font-size-base * 2;
+	}
+}
+
+@include phone6 {
+	h2 {
+		font-size: $font-size-base * 1.25;
+	}
+}
+
+/* 廣告 */
+.banner {
+	height: 840px;
+	background: url("/assets/images/work03/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-right: 5%;
+
+	p {
+		text-align: right;
+		color: $color-red;
+		font-weight: bold;
+	}
+}
+
+@include pad {
+	.banner {
+		background-position: right;
+		background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+	}
+}
+
+/* 推薦 */
+.introduction {
+	padding: 60px 0px 80px 0px;
+	max-width: 1920px;
+	background-color: $color-block;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	.introductionList {
+		li {
+			margin: 48.3px 15px 0px 15px;
+			max-width: 255px;
+		}
+
+		h3 {
+			margin-top: 25px;
+		}
+
+		p {
+			font-size: 16px;
+			margin-top: 8px;
+			font-weight: bold;
+		}
+	}
+}
+
+@include pad {
+	.introductionList {
+		max-width: 615px;
+		flex-wrap: wrap;
+
+		li img {
+			height: 83px;
+			width: 83px;
+		}
+	}
+}
+
+@include phone6 {
+	.introductionList {
+		justify-content: center;
+	}
+}
+
+/* 經典推薦 */
+.classicSuggest {
+	padding: 60px 0px 80px 0px;
+	max-width: 1920px;
+
+	h2 {
+		margin-bottom: 8px;
+	}
+
+	.container {
+		max-width: 1100px;
+	}
+
+	.products li {
+		margin-top: 32px;
+
+		div {
+			padding: 0px 15px;
+		}
+
+		p {
+			font-size: 48px;
+			color: #aa0601;
+			font-style: italic;
+			font-weight: bold;
+			word-break: break-all;
+		}
+
+		.pimg {
+			max-width: 635px;
+		}
+
+		.icon {
+			max-width: 32px;
+			height: 32px;
+			margin-right: 8px;
+		}
+	}
+
+	.products li:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.products li:nth-child(even) div {
+		justify-content: flex-end;
+	}
+}
+
+@include pad {
+	.classicSuggest {
+		.container {
+			.products {
+				li div {
+					align-items: center;
+				}
+
+				li:nth-child(even) {
+					flex-direction: row;
+				}
+
+				li:nth-child(even) div {
+					justify-content: flex-start;
+				}
+
+				li .pimg {
+					max-width: 390px;
+				}
+
+				p {
+					font-size: 28px;
+				}
+
+				.icon {
+					max-width: 27px;
+					height: 27px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+@include phone6p {
+	.classicSuggest {
+		padding: 32px 15px 40px 15px;
+		max-width: 1920px;
+
+		.products .pimg {
+			width: 100%;
+		}
+
+		.products li {
+			margin-top: 8px;
+			align-items: center;
+			justify-content: center;
+
+			div {
+				position: absolute;
+				justify-content: center;
+				width: 50%;
+				max-width: 375px;
+				padding: 0px;
+			}
+		}
+
+		.products li:nth-child(even) div {
+			justify-content: center;
+		}
+	}
+}
+
+@include phone6 {
+	.classicSuggest {
+		padding: 32px 15px 40px 15px;
+		max-width: 1920px;
+
+		.products .pimg {
+			width: 100%;
+		}
+
+		.products li {
+			margin-top: 8px;
+			align-items: center;
+			justify-content: center;
+
+			div {
+				position: absolute;
+				justify-content: center;
+				width: 50%;
+				max-width: 375px;
+				padding: 0px;
+			}
+		}
+
+		.products li:nth-child(even) div {
+			justify-content: center;
+		}
+	}
+}
+
+/* 聯名 */
+.nameProducts {
+	max-width: 1920px;
+	height: 705px;
+	background: url("/assets/images/work03/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.container {
+		margin: 0px auto;
+		max-width: 1140px;
+
+		h2 {
+			color: #ffffff;
+			margin-top: 60px;
+			margin-bottom: 40px;
+		}
+
+		.products li {
+			height: 455px;
+			width: 48%;
+			width: 540px;
+			margin: 0px 15px;
+		}
+
+		.mask {
+			background-color: rgba(255, 255, 255, 0.4);
+			width: 100%;
+			height: 100%;
+			background-blend-mode: color-dodge;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		p {
+			color: #aa0601;
+			font-size: 72px;
+			font-weight: bold;
+			position: absolute;
+		}
+	}
+}
+
+@include pad {
+	.nameProducts {
+		height: 452px;
+		.container {
+			.products {
+				max-width: 690px;
+			}
+
+			.products li {
+				height: 278px;
+			}
+
+			.products li p {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+@include phone6 {
+	.nameProducts {
+		height: 452px;
+		height: 719px;
+		padding: 0px 15px;
+	}
+
+	.nameProducts h2 {
+		margin-top: 32px;
+		margin-bottom: 4px;
+	}
+
+	.nameProducts .products {
+		max-width: 375px;
+		flex-wrap: wrap;
+	}
+
+	.nameProducts .products li {
+		width: 100%;
+		max-width: 345px;
+		height: 291px;
+		margin: 0px 15px;
+		margin-top: 16px;
+	}
+}
+
+/* 顧客 */
+.customer {
+	padding: 60px 0px 80px 0px;
+
+	.container {
+		.customerList {
+			max-width: 1140px;
+			margin-top: 40px;
+
+			li {
+				max-width: 255px;
+				box-shadow: 0px 3px 8px 1px grey;
+				border: 0px;
+				margin: 10px 15px;
+				height: 460px;
+
+				img {
+					height: 256px;
+				}
+
+				.text {
+					padding: 0px 16px;
+				}
+
+				p.name {
+					margin-top: 16px;
+					font-size: 14px;
+					font-weight: bold;
+				}
+
+				p.sug {
+					margin-top: 8px;
+					font-size: 16px;
+					font-weight: bold;
+				}
+
+				p.date {
+					margin-bottom: 16px;
+					font-size: 14px;
+					color: #707070;
+				}
+			}
+		}
+
+		.dateDiv {
+			padding: 0px 16px;
+		}
+	}
+}
+
+@include pad {
+	.customer {
+		padding-bottom: 56px;
+		padding-top: 40px;
+
+		.container {
+			.customerList {
+				max-width: 720px;
+				justify-content: center;
+				margin-top: 0px;
+
+				li {
+					margin-top: 32px;
+					max-width: 330px;
+
+					img {
+						width: 330px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include phone6 {
+	.customer .container .customerList li {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* 聯絡 */
+.connect {
+	background-color: #aa06010d;
+	padding-top: 60px;
+	padding-bottom: 80px;
+
+	.container {
+		max-width: 730px;
+
+		.title {
+			font-size: 20px;
+		}
+
+		.inputBox p {
+			font-size: 16px;
+		}
+
+		.inputBox span {
+			font-size: 16px;
+		}
+
+		h2 {
+			color: #000000;
+			margin-bottom: 24px;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			height: 50px;
+			border: #000000 solid 1px;
+			font-size: 20px;
+			margin-top: 4px;
+			border-radius: 5px;
+			background-color: rgba(0%, 0%, 0%, 0);
+			text-indent: 2px;
+			padding-left: 2px;
+			text-indent: 10px;
+		}
+
+		input[type="checkbox"] {
+			width: 24px;
+			height: 24px;
+			background-color: rgba(0%, 0%, 0%, 0);
+			margin-right: 4px;
+		}
+
+		textarea {
+			width: 100%;
+			height: 136px;
+			font-size: 16px;
+			margin-top: 4px;
+			border-radius: 5px;
+			background-color: rgba(0%, 0%, 0%, 0);
+			font-size: 20px;
+			resize: none;
+			text-indent: 10px;
+		}
+
+		.btn {
+			width: 350px;
+			height: 54px;
+			background-color: #aa0601;
+			color: #ffffff;
+			border: 0px;
+			margin-top: 40px;
+		}
+
+		.inputBox {
+			width: 100%;
+			margin-top: 4px;
+
+			li {
+				width: 100%;
+				margin-top: 16px;
+			}
+		}
+	}
+}
+
+@include pad {
+	.connect {
+		padding-top: 40px;
+		padding-bottom: 56px;
+		.title {
+			font-size: 16px;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 450px;
+
+			.inputBox p {
+				font-size: 14px;
+			}
+
+			input[type="checkbox"] {
+				margin-right: 4px;
+				margin-top: 0px;
+				width: 17px;
+				height: 17px;
+			}
+
+			.inputBox li {
+				align-items: start;
+				margin-top: 8px;
+			}
+
+			.inputBox span {
+				font-size: 14px;
+			}
+
+			.btn {
+				width: 210px;
+				height: 40px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@include phone6 {
+	.connect {
+		padding: 20px 15px;
+	}
+}
