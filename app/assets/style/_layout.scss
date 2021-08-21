@@ -1,307 +1,83 @@
-body {
-	font-family: "Roboto", "Noto Sans", sans-serif, sans-serif;
+.items {
+    button {
+        border: 0px;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    button:hover {
+        border-bottom: 1px solid #e31277;
+    }
+
+    button.active {
+        border-bottom: 1px solid #e31277;
+    }
 }
 
-@include pad {
-	.f-36 {
-		font-size: $font-size-base * 1.25;
-	}
+.banner {
+    & {
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 480px;
+    }
+
+    .btn-outline-light:hover {
+        background-color: #e31277;
+        border: 1px solid #e31277;
+        color: #fff;
+    }
 }
 
-@include phone6 {
-	.f-36 {
-		font-size: $font-size-base;
-	}
+.sugList {
+    img {
+        width: 100%;
+        height: 350px;
+    }
 }
 
-/* header */
-.header {
-	max-width: 1920px;
-	padding: 0px 88px;
-	background-color: #aa0601;
-
-	.container {
-		.nav {
-			margin-top: 38px;
-			margin-bottom: 41px;
-			width: 512px;
-
-			li {
-				max-width: 80px;
-			}
-
-			a {
-				color: $color-white;
-				text-decoration: none;
-				line-height: 1.5;
-			}
-		}
-
-		.logo {
-			background: url("/assets/images/work03/logo.png");
-			background-size: contain;
-			background-repeat: no-repeat;
-			width: 80px;
-			height: 49px;
-		}
-	}
-}
-
-@include pad {
-	.header {
-		padding: 0px 39px;
-	}
-}
-
-@include phone6p {
-	.header {
-		padding: 0px 15px;
-	}
-
-	.header {
-		max-width: 414px;
-		padding: 0px;
-
-		.container {
-			display: flex;
-			flex-direction: column;
-
-			.logo {
-				width: 48px;
-				height: 30px;
-				margin: 10px 0px;
-			}
-
-			.nav {
-				width: 414px;
-				flex-wrap: wrap;
-				margin: 0px;
-
-				li {
-					text-align: center;
-					border: $color-white solid 1px;
-					width: 207px;
-					max-width: 207px;
-				}
-			}
-		}
-	}
-}
-
-@include phone6 {
-	.header {
-		max-width: 375px;
-		padding: 0px;
-
-		.container {
-			display: flex;
-			flex-direction: column;
-
-			.logo {
-				width: 48px;
-				height: 30px;
-				margin: 10px 0px;
-			}
-
-			.nav {
-				width: 375px;
-				flex-wrap: wrap;
-				margin: 0px;
-
-				li {
-					text-align: center;
-					border: $color-white solid 1px;
-					width: 187.5px;
-					max-width: 187.5px;
-				}
-			}
-		}
-	}
-}
-
-/* footer */
 .footer {
-	max-width: 1920px;
-	padding: 32px 39px 39px 42px;
-	background-color: #aa0601;
+    .banner {
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-	.container {
-		color: $color-white;
-		max-width: 1030px;
-		margin: 0px auto;
-	}
-
-	.linkArea {
-		width: 100%;
-		align-items: center;
-	}
-
-	.linkUl {
-		width: 464px;
-
-		a {
-			text-decoration: none;
-			line-height: 1.5;
-			color: $color-white;
-		}
-	}
-
-	.iconArea {
-		height: 48px;
-		width: 208px;
-	}
-
-	.contact {
-		font-weight: bold;
-		border-bottom: 1px solid #bebebe;
-		margin-bottom: 32px;
-
-		.phone {
-			margin-top: 42px;
-			height: 48px;
-		}
-
-		.phone .phoneImg {
-			width: 36px;
-			height: 36px;
-			height: 48px;
-			margin-right: 22px;
-		}
-
-		.mail {
-			margin-top: 30px;
-			margin-bottom: 32px;
-			height: 48px;
-		}
-
-		.mail .mailImg {
-			width: 40px;
-			height: 32px;
-			margin-right: 20px;
-		}
-	}
-
-	.provision {
-		.d-flex p {
-			margin-left: 48px;
-		}
-	}
+        input {
+            height: 38px;
+        }
+    }
 }
 
-@include pad {
-	.footer {
-		padding-top: 38px;
-		padding-bottom: 21px;
+.buycar {
+    position: absolute;
+    width: 45%;
+    right: 0px;
+    top: 108px;
+    background: #000;
+    color: #ffffff;
 
-		.linkUl {
-			width: 432px;
-			margin-left: 6px;
-		}
-
-		.linkArea {
-			justify-content: space-between;
-		}
-
-		.iconArea {
-			display: flex;
-			height: 24px;
-			width: 120px;
-		}
-
-		.contact .mail .mailImg {
-			width: 18px;
-			height: 18px;
-			margin-right: 10px;
-		}
-
-		.contact .phone .phoneImg {
-			width: 20px;
-			height: 16px;
-			margin-right: 11px;
-		}
-
-		.contact {
-			.phone {
-				height: 26px;
-				margin-top: 18px;
-			}
-
-			.mail {
-				height: 26px;
-				margin-top: 12px;
-				margin-bottom: 20px;
-			}
-		}
-
-		.provision {
-			display: flex;
-			justify-content: space-between;
-		}
-	}
+    .productList {
+        color: #000;
+    }
+    .productImg {
+        width: 120px;
+        height: 120px;
+    }
 }
-@include phone6 {
-	.footer {
-		padding-right: 15px;
-		padding-left: 15px;
 
-		.f-36 {
-			font-size: $font-size-base;
-		}
-
-		.linkUl {
-			display: none;
-		}
-
-		.phoneWidth {
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			align-items: start;
-			border-bottom: 1px solid $color-gray;
-			margin-bottom: 16px;
-		}
-
-		.mailImg {
-			width: 16px;
-			height: 13px;
-			margin-right: 6px;
-		}
-
-		.phoneImg {
-			width: 15px;
-			height: 15px;
-			margin-right: 6px;
-		}
-
-		.contact {
-			border-bottom: 0px solid $color-gray;
-			margin-bottom: 24px;
-
-			.mail {
-				height: 21px;
-				margin-top: 10px;
-				margin-bottom: 0px;
-			}
-
-			.phone {
-				height: 21px;
-				margin-top: 0px;
-			}
-		}
-
-		.provision {
-			flex-direction: column;
-
-			.d-flex {
-				flex-direction: column;
-				justify-content: flex-start;
-				align-items: flex-start;
-
-				p {
-					margin-left: 0px;
-					margin-top: 8px;
-				}
-			}
-		}
-	}
+.baycarBtn::before {
+    content: "3";
+    font-size: 4px;
+    position: relative;
+    display: inline-block;
+    background-color: #e31277;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    right: -32px;
+    top: -7px;
 }

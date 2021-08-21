@@ -1,77 +1,8 @@
-h2{
-    font-size: 48px;
-    font-weight: bold;
+img {
+    display: block;
+    height: auto;
 }
 
-h3{
-    font-weight: bold;
-	font-size: 24px;
-}
-
-.f-14 {
-    font-size: $font-size-base * 0.75;
-}
-
-.f-16 {
-    font-size: $font-size-base;
-}
-
-.f-20 {
-    font-size: $font-size-base * 1.25;
-}
-
-.f-36 {
-    font-size: $font-size-base * 2.25;
-}
-
-.f-34 {
-    font-size: $font-size-base * 2.175;
-}
-
-.f-64 {
-    font-size: $font-size-base * 4;
-}
-
-.d-flex {
-    display: flex;
-}
-.flex-wrap {
-    flex-wrap: wrap;
-}
-.flex-column {
-    flex-direction: column;
-}
-.flex-row-reverse {
-    flex-direction: row-reverse;
-}
-.justify-content-center {
-    justify-content: center;
-}
-.justify-content-between {
-    justify-content: space-between;
-}
-.justify-content-around {
-    justify-content: space-around;
-}
-.align-items-center {
-    align-items: center;
-}
-.align-items-baseline {
-    align-items: baseline;
-}
-
-.f-w-b{
-    font-weight: bold;
-}
-
-.mx-0 {
-    margin: 0 auto;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.h-100 {
-    height: 100%;
+a {
+    text-decoration:none
 }
