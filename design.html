@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+
+    <div class="header border border-2">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-4">
+          <div class="col-4"></div>
+          <h1 class="col-4 text-deep-red text-center"><a class="text-deep-red" href="index.html">EXHIBINECTION</a></h1>
+          <div class="col-4 d-flex justify-content-end">
+            <ul class="d-flex list-unstyled align-items-center">
+              <li class="mx-3">
+                <button class="border-0 bg-white text-secondary">Sign in</button>
+              </li>
+              <li class="mx-3">
+                <button class="border-0 bg-white text-secondary">Sign up</button>
+              </li>
+              <li class="mx-3">
+                <button class="baycarBtn border-0 bg-white" onclick="buycarEvent()">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="items border border-2">
+      <div class="container">
+        <div class="row justify-content-center py-2">
+          <ul class="col-8 d-flex align-items-center justify-content-around list-unstyled m-0 ">
+            <li><button class="text-secondary">音樂</button></li>
+            <li><button class="text-secondary">戲劇</button></li>
+            <li><button class="text-secondary active" onclick="javascript:location.href='design.html'">設計</button></li>
+            <li><button class="text-secondary">藝術</button></li>
+            <li><button class="text-secondary">美食</button></li>
+            <li><button class="text-secondary">旅遊</button></li>
+            <li><button class="text-secondary">電影</button></li>
+            <li><button class="text-secondary">親子</button></li>
+            <li>
+              <button class="text-secondary">期間限定</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+<div class="designList">
+  <div class="container-fulid">
+    <div class="row px-5 bg-deep-red text-white align-items-start">
+      <div class="col-4">
+        <h2 class="fw-bold">2020 台味設計展</h2>
+        <p>
+          一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+        </p>
+      </div>
+      <div class="col-4">
+          <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+      </div>
+      <div class="col-1 d-flex align-items-end fs-5 time"><p>01<br> JUN<br> |<br> 31<br> OCT<br></p></div>
+    </div>
+    <div class="row px-5 text-deep-red align-items-start justify-content-end">
+        <div class="col-4">
+          <h2 class="fw-bold">No.22 線上設計展</h2>
+          <p>
+            這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+          </p>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+        </div>
+        <div class="col-1 d-flex align-items-end fs-5 time"><p>01<br> JUN<br> |<br> 31<br> OCT<br></p></div>
+      </div>
+
+      <div class="row px-5 bg-deep-red text-white align-items-start">
+        <div class="col-4">
+          <h2 class="fw-bold">高雄設計節</h2>
+          <p>
+            這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+          </p>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+        </div>
+        <div class="col-1 d-flex align-items-end fs-5 time"><p>01<br> JUN<br> |<br> 31<br> OCT<br></p></div>
+      </div>
+
+  </div>
+</div>
+
+
+    <div class="sugList py-4">
+      <div class="container">
+        <h2 class="fw-bold my-1">猜你也喜歡...</h2>
+        <div class="row justify-content-center my-4">
+          <div class="col-3">
+            <img src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+          <div class="col-3">
+            <img src="assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+          <div class="col-3">
+            <img src="assets/images/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="footer">
+    <div class="banner">
+      <div class="h-100 container">
+        <div class="h-100 pb-5 row align-items-end">
+          <div class="col-4">
+            <h2 class="text-white fw-bold">想收到展覽的最新消息嗎？</h2>
+            <h2 class="text-white fw-bold"> 快訂閱我們！</h2>
+            <div class="d-flex align-items-start w-100"><input class="w-75" type="text" placeholder="輸入電子信箱"><button class="btn text-white btn-new-pink rounded-0">訂閱</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-between py-3">
+        <div class="d-flex align-items-center">
+          <p class="fs-3 p-0 m-0 me-3">EXHIBINECTION</p><p class="p-0 m-0">© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="m-0 d-flex list-unstyled align-items-center">
+          <li class="mx-3 d-flex align-items-center">
+            <button class="border-0 bg-white text-secondary">Sign in</button>
+          </li>
+          <li class="mx-3 d-flex align-items-center">
+            <button class="border-0 bg-white text-secondary">Sign up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="buycar p-5">
+    <h2>Cart List</h2>
+    <ul class="list-unstyled productList">
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="d-flex justify-content-between align-items-center">
+      <div><span>小計</span><span>NT11050</span></div>
+      <button class="btn btn-outline-light" onclick="javascript:location.href='bill.html'">前往結帳</button>
+    </div>
+  </div>
+  
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
